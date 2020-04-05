@@ -3,7 +3,7 @@
 <head>
 	<title>Heroes and Dragons - Personnages</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Jeux de rôle privé>
+	<meta name="description" content="Jeux de rôle privé">
 	<meta name="keywords" content="gaming, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -23,6 +23,9 @@
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css"/>
 
+	<!-- include html-->
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -37,18 +40,7 @@
 	</div>
 
 	<!-- Header section -->
-	<header class="header-section">
-		<a href="index.html" class="site-logo">
-			<img src="img/logo.png" alt="logo">
-		</a>
-		<ul class="main-menu">
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="characters.html">Personnages</a></li>
-			<li><a href="game.html">Le jeu</a></li>
-			<li><a href="reviews.html">Les régles</a></li>
-			<li><a href="#">News</a></li>
-		</ul>		
-	</header>
+		<div w3-include-html="menu.html"></div>		
 	<!-- Header section end -->
 
 	<!-- Page top section -->
@@ -72,7 +64,7 @@
 									<div class="character-img">
 										<img src="img/game-characters/siegheart.jpg" alt="">
 									</div>
-									<a href="#" class="site-btn">Connexion</a>
+									<a href="character_sheet.html" class="site-btn">Connexion</a>
 								</div>
 							</div>
 							<div class="col-lg-4">
@@ -149,5 +141,9 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 
-	</body>
+		<!-- include html-->
+	<script>w3.includeHTML();</script>
+
+</body>
+	
 </html>

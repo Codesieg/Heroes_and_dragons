@@ -162,6 +162,11 @@
     border-radius: 30px;
     background: rgb(133, 130, 127) ;
     border: 5px double #f7eff0;
+    
+}
+
+.circle-align{
+    margin :-8px;
 }
 
 .circle div,
@@ -175,9 +180,6 @@
     padding-top: 8px;
 }
 
-.circle{
-    margin :-5px;
-}
 .box-skill {
 display: flex;
 margin-top: 10px;
@@ -186,4 +188,39 @@ margin-top: 10px;
 .skill-circle{
     padding-top: 25px;
     margin-left: -30px;
+}
+
+.character-skills {
+    display: flex;
+}
+
+.skills-bonus {
+    display: flex;
+    width: 200px;
+    margin: 8px 0 0 35px;
+}
+
+.circle-center{
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+}
+.single-bonus-points{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+}
+
+.single-bonus-points h6 {
+    padding: 10px 30px 0 0;
+}
+
+.title-points{
+    margin: 18px 25px 25px 25px;
+}
+.circle-points{
+    margin-bottom: 15px;;
+}
+.title-points h6 {
+    margin-bottom: 36px;
 }

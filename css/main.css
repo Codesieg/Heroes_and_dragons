@@ -18,7 +18,7 @@
   }
 
  
-  .character-skills table {
+  .character-info table {
     text-align: left;
     border-collapse: separate;
     border-spacing: 0;
@@ -208,7 +208,7 @@ margin-top: 10px;
 .single-bonus-points{
     display: flex;
     flex-direction: column;
-    margin: 10px 0 0 0;
+    margin: 5px 0 0 0;
 }
 
 .single-bonus-points h6 {
@@ -216,11 +216,30 @@ margin-top: 10px;
 }
 
 .title-points{
-    margin: 18px 25px 25px 25px;
+    margin: 8px 25px 25px 25px;
 }
 .circle-points{
-    margin-bottom: 15px;;
+    margin-bottom: 10px;;
 }
 .title-points h6 {
     margin-bottom: 36px;
+}
+
+.detailed-skill{
+    margin: 9px 0 0 50px;
+}
+
+.detailed-skill table {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 5px double #f7eff0;
+    width: 215px;   
+}
+.inspiration-checkbox{
+    margin-left: 175px;
+}
+
+.attributs-points{
+    margin-top: 10px;
 }

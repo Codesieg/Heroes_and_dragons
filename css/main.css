@@ -1,34 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #333;
+    color: rgb(252, 248, 248);
   }
   
-  table {
+  .character-info table {
     text-align: left;
-    line-height: 40px;
     border-collapse: separate;
     border-spacing: 0;
-    border: 2px solid #ed1c40;
-    width: 500px;
-    margin: 50px auto;
-    border-radius: .25rem;
+    border: 5px double #f7eff0;
+    width: 930px;  
+  }
+
+  .h7 {
+      font-size: 12px;
+  }
+
+ 
+  .character-skills table {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 5px double #f7eff0;
+    width: 930px;  
   }
   
   thead tr:first-child {
-    background: #ed1c40;
+    background: #726668;
     color: #fff;
     border: none;
   }
   
   th:first-child,
   td:first-child {
-    */
+    padding-left: 10px;
   }
   
   th {
@@ -36,11 +42,11 @@
   }
   
   thead tr:last-child th {
-    border-bottom: 3px solid #ddd;
+    border-bottom: 3px double #ddd;
   }
   
   tbody tr:hover {
-    background-color: #f2f2f2;
+    background-color: #080808;
     cursor: default;
   }
   
@@ -52,7 +58,7 @@
     border-bottom: 1px solid #ddd;
   }
   
-  td:last-child {
+  .character-info td:last-child {
     text-align: right;
     padding-right: 10px;
   }
@@ -71,3 +77,113 @@
   .delete:hover {
     color: #dc2a2a;
   }
+
+  .character-story{
+      display: flex;
+      margin-bottom: 50px;
+  }
+
+  .story h2{
+    font-size: 20px;
+    color: #fff;
+    margin: 5px 5px 5px 5px;
+  }
+
+  .story {
+    border: 5px double #f7eff0;
+  }
+
+  .story p {
+      margin: 5px 5px 5px 5px;
+  }
+
+  .character-sheet-main {
+	background: #1c1c1c;
+  }
+
+.character-sheet {
+    padding-top : 120px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+  }
+
+  .attribute-box{
+    border: 5px double #f7eff0;
+    display: flex;
+    padding: 2px 0 2px 2px;
+    width: 150px;
+    height: 150px;
+}
+
+.attribute-box, h6, h7 {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 0 2px 2px;
+}
+
+.points {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(133, 130, 127);
+    width: 60px;
+    height: 60px;
+    line-height: 60px; /* hauteur de ligne (identique) */
+    white-space: nowrap; /* interdiction de passer à la ligne */
+
+}
+.skill-checkbox{
+   display: flex;
+   flex-direction: column;
+   padding: 0 5px 5px 10px; 
+}
+.skill-checkbox input {
+    margin-left: 2px;
+}
+
+.skill-checkbox label{
+    margin-bottom: 0px;
+}
+
+.single-skill {
+    width:155px;
+}
+
+.attribute-points {
+    width: 310px;
+}
+.skill-points {
+    display: flex; 
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgb(133, 130, 127) ;
+    border: 5px double #f7eff0;
+}
+
+.circle div,
+.circle .h7  {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.circle .h7{
+    padding-top: 8px;
+}
+
+.circle{
+    margin :-5px;
+}
+.box-skill {
+display: flex;
+margin-top: 10px;
+}
+
+.skill-circle{
+    padding-top: 25px;
+    margin-left: -30px;
+}

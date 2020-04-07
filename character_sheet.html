@@ -34,7 +34,7 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="character-sheet-main">
 	<?php include('../dossier/fichier.php');?>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -65,69 +65,229 @@
 		</div>
 	</section>
 	<!-- sheet character section end -->
-	<section class="characters-section-one character-one">
-		<section class="character-one">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="character-info">
-								<h2>Fiche de personnage</h2>	
-						</div>							
-						<div class="character-img">
-							<img src="img/game-characters/siegheart.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="character-info">
-							<table>
-								<thead>
-								  <tr>
-									<th colspan="3">Atividades do projeto</th>
-								  </tr>
-								  <tr>
-									<th>#</th>
-									<th colspan="2">Atividade</th>
-								  </tr>
-								</thead>
-								<tbody>
-								  <tr>
-									<td>1</td>
-									<td>Atualizar página da equipe</td>
-									<td>
-									  <i class="material-icons button edit">edit</i>
-									  <i class="material-icons button delete">delete</i>
-									</td>
-								  </tr>
-								  <tr>
-									<td>2</td>
-									<td>Design da nova marca</td>
-									<td>
-									  <i class="material-icons button edit">edit</i>
-									  <i class="material-icons button delete">delete</i>
-									</td>
-								  </tr>
-								  <tr>
-									<td>3</td>
-									<td>Encontrar desenvolvedor front-end</td>
-									<td>
-									  <i class="material-icons button edit">edit</i>
-									  <i class="material-icons button delete">delete</i>
-									</td>
-								  </tr>
-								</tbody>
-							  </table>
-						</div>
-
-					</div>
+	<section class="character-sheet">
+			<div class="character-story">								
+				<div class="character-img">
+					<img src="img/game-characters/siegheart.jpg" alt="">
+				</div>
+				<div class="story">
+					<h2> Description :</h2>
+					<p> Lorem lorem ipsum  Lorem lorem ipsum Lorem lorem ipsum Lorem lorem ipsum Lorem lorem ipsum</p>
 				</div>
 			</div>
-		</section>
+			<div class="character-info">
+				<table>	
+					 <thead>
+						<tr>
+							<th>Classe</td>
+							<th>Archétype</td>
+							<th>Niveau</td>
+							<th>Race</td>
+							<th>Alignement</td>
+							<th colspan="3">Point d'expérience</td>
+						</tr>
+					</thead>						
+					<tbody>
+						<tr>
+							<td>Chevalier Noir</td>
+							<td></td>
+							<td>2</td>
+							<td>Humain</td>
+							<td></td>
+							<td ></td>
+							<td><i class="material-icons button edit">editer</i><!-- <i class="material-icons button delete">supprimer</i> --></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>	
+			<div class="character-skills">
+				<div class="attributs-points">
+
+					<!-- Single skill -->
+					<div class="box-skill">
+						<div class="single-skill">
+						<!-- Skill strong -->
+							<div class="attribute-box">
+								<div class=" text-white">
+									<h6>Force</h6>
+									<div class="h7">Modificateur</div>
+								</div>
+								<div class="skill-points">
+									<div class="points">+2</div>		
+									<div class="skill-checkbox">				
+										<label for="force-M">M</label>
+										<input type="checkbox" id="force-M" name="scales" checked>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class ="skill-circle">
+							<div class="circle">
+								<div class="h7">Valeur</div>
+								<div>+4</div>
+							</div>
+							<div class="circle">
+							<div class="h7">Sauv</div>
+								<div>+4</div>
+							</div>
+						</div>
+					</div>
+					<!-- Skill strong end -->
+					<!-- Single skill end -->
+
+				    <!-- Skill dexterity -->
+					<div class="box-skill">
+						<div class="single-skill">
+							<div class="attribute-box">
+								<div class=" text-white">
+									<h6>Dextérité</h6>
+									<div class="h7">Modificateur</div>
+								</div>
+								<div class="skill-points">
+									<div class="points">+2</div>		
+									<div class="skill-checkbox">				
+										<label for="force-M">M</label>
+										<input type="checkbox" id="force-M" name="scales">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class ="skill-circle">
+							<div class="circle">
+								<div class="h7">Valeur</div>
+								<div>14</div>
+							</div>
+							<div class="circle">
+							<div class="h7">Sauv</div>
+								<div>+2</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="box-skill">
+						<div class="single-skill">
+
+						<!-- Skill constitution -->
+							<div class="attribute-box">
+								<div class=" text-white">
+									<h6>Constitution</h6>
+									<div class="h7">Modificateur</div>
+								</div>
+								<div class="skill-points">
+									<div class="points">+2</div>		
+									<div class="skill-checkbox">				
+										<label for="force-M">M</label>
+										<input type="checkbox" id="force-M" name="scales" checked>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class ="skill-circle">
+							<div class="circle">
+								<div class="h7">Valeur</div>
+								<div>15</div>
+							</div>
+							<div class="circle">
+							<div class="h7">Sauv</div>
+								<div>+4</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Skill intelligence -->					
+					<div class="box-skill">
+						<div class="single-skill">
+							<div class="attribute-box">
+								<div class=" text-white">
+									<h6>Intelligence</h6>
+									<div class="h7">Modificateur</div>
+								</div>
+								<div class="skill-points">
+									<div class="points">+1</div>		
+									<div class="skill-checkbox">				
+										<label for="force-M">M</label>
+										<input type="checkbox" id="force-M" name="scales">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class ="skill-circle">
+							<div class="circle">
+								<div class="h7">Valeur</div>
+								<div>12</div>
+							</div>
+							<div class="circle">
+							<div class="h7">Sauv</div>
+								<div>+1</div>
+							</div>
+						</div>
+					</div>
+
+				    <!-- Skill wisdom -->
+					<div class="box-skill">
+						<div class="single-skill">
+							<div class="attribute-box">
+								<div class=" text-white">
+									<h6>Sagesse</h6>
+									<div class="h7">Modificateur</div>
+								</div>
+								<div class="skill-points">
+									<div class="points">-1</div>		
+									<div class="skill-checkbox">				
+										<label for="force-M">M</label>
+										<input type="checkbox" id="force-M" name="scales">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class ="skill-circle">
+							<div class="circle">
+								<div class="h7">Valeur</div>
+								<div>9</div>
+							</div>
+							<div class="circle">
+							<div class="h7">Sauv</div>
+								<div>-1</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Skill charism -->
+					<div class="box-skill">
+						<div class="single-skill">
+							<div class="attribute-box">
+								<div class=" text-white">
+									<h6>Charisme</h6>
+									<div class="h7">Modificateur</div>
+								</div>
+								<div class="skill-points">
+									<div class="points">+2</div>		
+									<div class="skill-checkbox">				
+										<label for="force-M">M</label>
+										<input type="checkbox" id="force-M" name="scales">
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class ="skill-circle">
+							<div class="circle">
+								<div class="h7">Valeur</div>
+								<div>15</div>
+							</div>
+							<div class="circle">
+							<div class="h7">Sauv</div>
+								<div>+2</div>
+							</div>
+						</div>
+					</div>
+			</div>	
+		
+			<!-- sheet character section end -->
+			<div>
+				<a href="character_sheet.html" class="site-btn">Enregistrer</a>
+			</div>
 	</section>
-	<div>
-		<a href="character_sheet.html" class="site-btn">Enregistrer</a>
-	</div>
 	
-	<!-- sheet character section end -->
 
 	<!-- Footer section  -->
 	<!-- Footer section end -->

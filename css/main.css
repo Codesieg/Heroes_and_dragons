@@ -10,20 +10,11 @@
     border-collapse: separate;
     border-spacing: 0;
     border: 5px double #f7eff0;
-    width: 930px;  
+    width: 1020px;  
   }
 
   .h7 {
       font-size: 12px;
-  }
-
- 
-  .character-info table {
-    text-align: left;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 5px double #f7eff0;
-    width: 930px;  
   }
   
   thead tr:first-child {
@@ -32,9 +23,13 @@
     border: none;
   }
   
-  th:first-child,
-  td:first-child {
+  th:first-child
+   {
     padding-left: 10px;
+  }
+
+  td:first-child {
+    padding-left: 12px;
   }
   
   th {
@@ -91,32 +86,32 @@
 
   .story {
     border: 5px double #f7eff0;
+    width: 795px
   }
 
   .story p {
-      margin: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
   }
 
   .character-sheet-main {
-	background: #1c1c1c;
+  	background: #1c1c1c;
   }
 
-.character-sheet {
+  .character-sheet {
     padding-top : 120px;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 200px;
+    margin-right: 200px;
     margin-bottom: 50px;
   }
 
   .attribute-box{
     border: 5px double #f7eff0;
-    display: flex;
-    padding: 2px 0 2px 2px;
     width: 150px;
     height: 150px;
 }
 
-.attribute-box, h6, h7 {
+.attribute-box h6,
+.attribute-box h5 {
     display: flex;
     flex-direction: column;
     padding: 2px 0 2px 2px;
@@ -162,7 +157,6 @@
     border-radius: 30px;
     background: rgb(133, 130, 127) ;
     border: 5px double #f7eff0;
-    
 }
 
 .circle-align{
@@ -170,13 +164,13 @@
 }
 
 .circle div,
-.circle .h7  {
+.circle h6  {
     display: flex;
     justify-content: center;
     color: white;
 }
 
-.circle .h7{
+.circle h6{
     padding-top: 8px;
 }
 
@@ -196,8 +190,8 @@ margin-top: 10px;
 
 .skills-bonus {
     display: flex;
-    width: 200px;
-    margin: 8px 0 0 35px;
+    width: 225px;
+    margin: 42px 0 0 35px;
 }
 
 .circle-center{
@@ -216,7 +210,11 @@ margin-top: 10px;
 }
 
 .title-points{
-    margin: 8px 25px 25px 25px;
+    margin: 8px 25px 8px 25px;
+}
+
+.title-points h5 {
+  margin: 0 0 40px 0;
 }
 .circle-points{
     margin-bottom: 10px;;
@@ -226,7 +224,7 @@ margin-top: 10px;
 }
 
 .detailed-skill{
-    margin: 9px 0 0 50px;
+    margin: 11px 0 0 20px;
 }
 
 .detailed-skill table {
@@ -234,12 +232,223 @@ margin-top: 10px;
     border-collapse: separate;
     border-spacing: 0;
     border: 5px double #f7eff0;
-    width: 215px;   
+    width: 265px;   
 }
+.detailed-skill table td:last-child{
+  background-color: rgb(133, 130, 127);
+  text-align: center;
+}
+
 .inspiration-checkbox{
-    margin-left: 175px;
+    margin-left: 180px;
 }
 
 .attributs-points{
     margin-top: 10px;
+}
+.litle-marge{
+  width: 35px;
+}
+
+.global-skills-3 {
+ margin: 18px 0 0 15px;
+ width: 620px;
+ text-align: center;
+}
+
+.global-skills-3-1 {
+  display: flex;
+}
+
+.health-status{
+  border: 5px double #f7eff0;
+  width: 290px;
+  height: 559px;
+  text-align: center;
+}
+
+.pv-max,
+.life-dice{
+  margin: 25px 20px 5px 15px;
+}
+
+.pv-max h6,
+.life-dice h6{
+  font-size: 10px;
+  margin-left: -5px;
+}
+
+.health-status-inline{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 10px;
+  
+} 
+
+.value-pv-max,
+.value-life-dice {
+  margin: 5px 0px 0px 0px;
+  font-size: 20px;
+  border: 2px solid #f7eff0;
+  background-color:  rgb(133, 130, 127);
+  width: 100px;
+
+}
+
+.actual-life-points {
+  margin: 5px 5px 5px 14px;
+  font-size: 16px;
+  border: 2px solid #f7eff0;
+  background-color: rgb(133, 130, 127);
+  height: 212px;
+  width: 250px;
+
+}
+
+.tired-status-inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 15px 0px;
+}
+
+.tired-level {
+  margin: 0 28px 0 0;
+}
+
+.life-dice-used {
+  margin: 0 0 0 20px;
+}
+
+.value-tired-level,
+.value-life-dice-used {
+  margin: 5px 0px 0px 0px;
+  font-size: 20px;
+  border: 2px solid #f7eff0;
+  background-color:  rgb(133, 130, 127);
+  width: 100px;
+}
+
+.saves-death-column {
+  display: flex;
+  flex-direction: column;
+}
+.success-checkbox,
+.failed-checkbox {
+  margin: 5px 10px 0px 0px;
+}
+
+.personality{
+  border: 5px double #f7eff0;
+  width: 250px;
+  height: 345px;
+  text-align: center;
+  margin: 0 5px 6px 10px;
+}
+
+.personality h6 {
+  margin: 1px 0 1px 0;
+  font-size: 12px;
+}
+
+.language {
+  border: 5px double #f7eff0;
+  width: 250px;
+  height: 207px;
+  text-align: center;
+  margin: 0 5px 5px 10px;
+}
+
+.value-history {
+  height: 50px;
+}
+
+.value-language {
+  height: 178px;
+}
+
+.value-language,
+.value-history {
+  background-color:  rgb(133, 130, 127);
+}
+
+.success-checkbox label,
+.failed-checkbox label{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.success-checkbox label,
+.failed-checkbox label {
+  margin:0;
+}
+
+.table-attacks-and-spells table {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 5px double #f7eff0;
+    width: 550px;  
+}
+
+.other-attacks-and-spells {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 5px double #f7eff0;
+    width: 550px;  
+    margin-top:20px;
+    height: 233px;
+}
+
+.other-attacks-and-spells div:empty:not(:focus):before {
+  content: attr(data-placeholder);
+}
+
+.character-abilities-and-features {
+  display: flex;
+}
+
+.abilities-and-features {
+  border: 5px double #f7eff0;
+  height: 250px;
+  width: 728px;
+  margin: 10px 10px 10px 0;
+}
+
+.abilities-and-features-text h5,
+.gears-text-box h5 {
+  margin: 5px 5px 5px 5px;
+}
+
+.gears-text-box div,
+.abilities-and-features-text p {
+  background-color: rgb(133, 130, 127);
+  height: 212px
+
+}
+
+.gears-text-box {
+  border: 5px double #f7eff0;
+  height: 250px;
+  width: 250px;
+  margin: 10px 10px 10px 10px;
+}
+
+
+
+.gear-text:empty:not(:focus):before {
+  content: attr(data-placeholder);
+}
+.abilities-and-features:empty:not(:focus):before {
+  content: attr(data-placeholder);
+}
+.skill-circle-gears {
+margin: 10px 0 0 -42px;
+}
+
+.circle-align-gears{
+  margin-bottom: -12px;
 }

@@ -118,3 +118,8 @@ $(window).on('load', function() {
 
 })(jQuery);
 
+$('#character-info-edit').on('click', function () {
+	var editable = element.contentEditable
+	element.contentEditable = "true"
+});
+

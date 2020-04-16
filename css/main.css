@@ -85,12 +85,15 @@
   }
 
   .story {
-    border: 5px double #f7eff0;
-    width: 795px
+    width: 795px; 
   }
 
-  .story p {
+  .story blockquote {
+    font-size: 16px;
     margin: 5px 5px 5px 5px;
+    font-style: italic;
+    font-weight: bold;
+
   }
 
   .character-sheet-main {

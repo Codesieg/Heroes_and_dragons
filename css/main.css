@@ -1,113 +1,114 @@
-
-  
-  body {
+body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: rgb(252, 248, 248);
-  }
-  
-  .character-info table {
+    margin: 0 0 0 0;
+}
+
+
+/* css Fiche personnages */
+
+.character-info table {
     text-align: left;
     border-collapse: separate;
     border-spacing: 0;
     border: 5px double #f7eff0;
-    width: 1020px;  
-  }
+    width: 1019px;
+}
 
-  .h7 {
-      font-size: 12px;
-  }
-  
-  thead tr:first-child {
+.h7 {
+    font-size: 12px;
+}
+
+thead tr:first-child {
     background: #726668;
     color: #fff;
     border: none;
-  }
-  
-  th:first-child
-   {
-    padding-left: 10px;
-  }
+}
 
-  td:first-child {
+th:first-child {
+    padding-left: 10px;
+}
+
+td:first-child {
     padding-left: 12px;
-  }
-  
-  th {
+}
+
+th {
     font-weight: 500;
-  }
-  
-  thead tr:last-child th {
+}
+
+thead tr:last-child th {
     border-bottom: 3px double #ddd;
-  }
-  
-  tbody tr:hover {
+}
+
+tbody tr:hover {
     background-color: #080808;
     cursor: default;
-  }
-  
-  tbody tr:last-child td {
+}
+
+tbody tr:last-child td {
     border: none;
-  }
-  
-  tbody td {
+}
+
+tbody td {
     border-bottom: 1px solid #ddd;
-  }
-  
-  .character-info td:last-child {
+}
+
+.character-info td:last-child {
     text-align: right;
     padding-right: 10px;
-  }
-  
-  .button {
+}
+
+.button {
     color: #aaa;
     cursor: pointer;
     vertical-align: middle;
     margin-top: -4px;
-  }
-  
-  .edit:hover {
+}
+
+.edit:hover {
     color: #0a79df;
-  }
-  
-  .delete:hover {
+}
+
+.delete:hover {
     color: #dc2a2a;
-  }
+}
 
-  .character-story{
-      display: flex;
-      margin-bottom: 50px;
-  }
+.character-story {
+    display: flex;
+    margin-bottom: 50px;
+}
 
-  .story h2{
+.story h2 {
     font-size: 20px;
     color: #fff;
     margin: 5px 5px 5px 5px;
-  }
+}
 
-  .story {
-    width: 795px; 
-  }
+.story {
+    width: 795px;
+}
 
-  .story blockquote {
+.story blockquote {
     font-size: 16px;
     margin: 5px 5px 5px 5px;
     font-style: italic;
     font-weight: bold;
+}
 
-  }
+.character-sheet-main {
+    background: #1c1c1c;
+}
 
-  .character-sheet-main {
-  	background: #1c1c1c;
-  }
+.character-sheet {
+    padding-top: 120px;
+    background: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-  .character-sheet {
-    padding-top : 120px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 50px;
-  }
-
-  .attribute-box{
+.attribute-box {
     border: 5px double #f7eff0;
     width: 150px;
     height: 150px;
@@ -126,65 +127,69 @@
     background-color: rgb(133, 130, 127);
     width: 60px;
     height: 60px;
-    line-height: 60px; /* hauteur de ligne (identique) */
-    white-space: nowrap; /* interdiction de passer à la ligne */
+    line-height: 60px;
+    /* hauteur de ligne (identique) */
+    white-space: nowrap;
+    /* interdiction de passer à la ligne */
+}
 
+.skill-checkbox {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 5px 10px;
 }
-.skill-checkbox{
-   display: flex;
-   flex-direction: column;
-   padding: 0 5px 5px 10px; 
-}
+
 .skill-checkbox input {
     margin-left: 2px;
 }
 
-.skill-checkbox label{
+.skill-checkbox label {
     margin-bottom: 0px;
 }
 
 .single-skill {
-    width:155px;
+    width: 155px;
 }
 
 .attribute-points {
     width: 310px;
 }
+
 .skill-points {
-    display: flex; 
+    display: flex;
 }
 
 .circle {
+    display: flex;
     width: 60px;
     height: 60px;
-    border-radius: 30px;
-    background: rgb(133, 130, 127) ;
+    border-radius: 35px;
+    background: rgb(133, 130, 127);
     border: 5px double #f7eff0;
+    align-items: center;
+    justify-content: center;
 }
 
-.circle-align{
-    margin :-8px;
+.circle-align {
+    margin: -8px;
+    flex-direction: column;
 }
 
 .circle div,
-.circle h6  {
+.circle h6 {
     display: flex;
     justify-content: center;
     color: white;
 }
 
-.circle h6{
-    padding-top: 8px;
-}
-
 .box-skill {
-display: flex;
-margin-top: 10px;
+    display: flex;
+    margin-top: 10px;
 }
 
-.skill-circle{
-    padding-top: 25px;
-    margin-left: -30px;
+.skill-circle {
+    padding-top: 32px;
+    margin-left: -29px;
 }
 
 .character-skills {
@@ -193,41 +198,40 @@ margin-top: 10px;
 
 .skills-bonus {
     display: flex;
+    flex-direction: column;
     width: 225px;
-    margin: 42px 0 0 35px;
+    margin: 45px 0 13px 30px;
 }
 
-.circle-center{
+.circle-center {
     font-size: 30px;
     text-align: center;
     margin: 5px 5px 5px 5px;
 }
-.single-bonus-points{
+
+.single-bonus-points {
     display: flex;
-    flex-direction: column;
-    margin: 5px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .single-bonus-points h6 {
     padding: 10px 30px 0 0;
 }
 
-.title-points{
-    margin: 8px 25px 8px 25px;
+.title-points {
+    margin: auto;
+    text-align: left;
+    width: 108px;
 }
 
-.title-points h5 {
-  margin: 0 0 40px 0;
-}
-.circle-points{
-    margin-bottom: 10px;;
-}
 .title-points h6 {
     margin-bottom: 36px;
 }
 
-.detailed-skill{
-    margin: 11px 0 0 20px;
+.detailed-skill {
+    margin: 5px 0 0 20px;
 }
 
 .detailed-skill table {
@@ -235,157 +239,156 @@ margin-top: 10px;
     border-collapse: separate;
     border-spacing: 0;
     border: 5px double #f7eff0;
-    width: 265px;   
-}
-.detailed-skill table td:last-child{
-  background-color: rgb(133, 130, 127);
-  text-align: center;
+    width: 265px;
 }
 
-.inspiration-checkbox{
+.detailed-skill table td:last-child {
+    background-color: rgb(133, 130, 127);
+    text-align: center;
+}
+
+.inspiration-checkbox {
     margin-left: 180px;
 }
 
-.attributs-points{
+.attributs-points {
     margin-top: 10px;
 }
-.litle-marge{
-  width: 35px;
+
+.litle-marge {
+    width: 35px;
 }
 
 .global-skills-3 {
- margin: 18px 0 0 15px;
- width: 620px;
- text-align: center;
+    margin: 18px 0 0 15px;
+    text-align: center;
 }
 
 .global-skills-3-1 {
-  display: flex;
+    display: flex;
 }
 
-.health-status{
-  border: 5px double #f7eff0;
-  width: 290px;
-  height: 559px;
-  text-align: center;
+.health-status {
+    border: 5px double #f7eff0;
+    width: 290px;
+    height: 559px;
+    text-align: center;
 }
 
 .pv-max,
-.life-dice{
-  margin: 25px 20px 5px 15px;
+.life-dice {
+    margin: 25px 20px 5px 15px;
 }
 
 .pv-max h6,
-.life-dice h6{
-  font-size: 10px;
-  margin-left: -5px;
+.life-dice h6 {
+    font-size: 10px;
+    margin-left: -5px;
 }
 
-.health-status-inline{
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  margin-bottom: 10px;
-  
-} 
+.health-status-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 
 .value-pv-max,
 .value-life-dice {
-  margin: 5px 0px 0px 0px;
-  font-size: 20px;
-  border: 2px solid #f7eff0;
-  background-color:  rgb(133, 130, 127);
-  width: 100px;
-
+    margin: 5px 0px 0px 0px;
+    font-size: 20px;
+    border: 2px solid #f7eff0;
+    background-color: rgb(133, 130, 127);
+    width: 100px;
 }
 
 .actual-life-points {
-  margin: 5px 5px 5px 14px;
-  font-size: 16px;
-  border: 2px solid #f7eff0;
-  background-color: rgb(133, 130, 127);
-  height: 212px;
-  width: 250px;
-
+    margin: 5px 5px 5px 14px;
+    font-size: 16px;
+    border: 2px solid #f7eff0;
+    background-color: rgb(133, 130, 127);
+    height: 212px;
+    width: 250px;
 }
 
 .tired-status-inline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 15px 0 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 15px 0px;
 }
 
 .tired-level {
-  margin: 0 28px 0 0;
+    margin: 0 28px 0 0;
 }
 
 .life-dice-used {
-  margin: 0 0 0 20px;
+    margin: 0 0 0 20px;
 }
 
 .value-tired-level,
 .value-life-dice-used {
-  margin: 5px 0px 0px 0px;
-  font-size: 20px;
-  border: 2px solid #f7eff0;
-  background-color:  rgb(133, 130, 127);
-  width: 100px;
+    margin: 5px 0px 0px 0px;
+    font-size: 20px;
+    border: 2px solid #f7eff0;
+    background-color: rgb(133, 130, 127);
+    width: 100px;
 }
 
 .saves-death-column {
-  display: flex;
-  flex-direction: column;
-}
-.success-checkbox,
-.failed-checkbox {
-  margin: 5px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
 }
 
-.personality{
-  border: 5px double #f7eff0;
-  width: 250px;
-  height: 345px;
-  text-align: center;
-  margin: 0 5px 6px 10px;
+.success-checkbox,
+.failed-checkbox {
+    margin: 5px 10px 0px 0px;
+}
+
+.personality {
+    border: 5px double #f7eff0;
+    width: 250px;
+    height: 345px;
+    text-align: center;
+    margin: 0 5px 6px 10px;
 }
 
 .personality h6 {
-  margin: 1px 0 1px 0;
-  font-size: 12px;
+    margin: 1px 0 1px 0;
+    font-size: 12px;
 }
 
 .language {
-  border: 5px double #f7eff0;
-  width: 250px;
-  height: 207px;
-  text-align: center;
-  margin: 0 5px 5px 10px;
+    border: 5px double #f7eff0;
+    width: 250px;
+    height: 207px;
+    text-align: center;
+    margin: 0 5px 5px 10px;
 }
 
 .value-history {
-  height: 50px;
+    height: 50px;
 }
 
 .value-language {
-  height: 178px;
+    height: 178px;
 }
 
 .value-language,
 .value-history {
-  background-color:  rgb(133, 130, 127);
-}
-
-.success-checkbox label,
-.failed-checkbox label{
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
+    background-color: rgb(133, 130, 127);
 }
 
 .success-checkbox label,
 .failed-checkbox label {
-  margin:0;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.success-checkbox label,
+.failed-checkbox label {
+    margin: 0;
 }
 
 .table-attacks-and-spells table {
@@ -393,7 +396,12 @@ margin-top: 10px;
     border-collapse: separate;
     border-spacing: 0;
     border: 5px double #f7eff0;
-    width: 550px;  
+    width: 555px;
+    margin-top: 8px;
+}
+
+.table-attacks-and-spells {
+    margin-top: 19px;
 }
 
 .other-attacks-and-spells {
@@ -401,57 +409,64 @@ margin-top: 10px;
     border-collapse: separate;
     border-spacing: 0;
     border: 5px double #f7eff0;
-    width: 550px;  
-    margin-top:20px;
-    height: 233px;
+    width: 555px;
+    margin-top: 25px;
+    padding: 5px 5px 5px 5px;
+    height: 200px;
 }
 
 .other-attacks-and-spells div:empty:not(:focus):before {
-  content: attr(data-placeholder);
+    content: attr(data-placeholder);
 }
 
 .character-abilities-and-features {
-  display: flex;
+    display: flex;
 }
 
 .abilities-and-features {
-  border: 5px double #f7eff0;
-  height: 250px;
-  width: 728px;
-  margin: 10px 10px 10px 0;
+    border: 5px double #f7eff0;
+    height: 250px;
+    width: 736px;
+    margin: 10px 10px 10px 0;
 }
 
 .abilities-and-features-text h5,
 .gears-text-box h5 {
-  margin: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 .gears-text-box div,
 .abilities-and-features-text p {
-  background-color: rgb(133, 130, 127);
-  height: 212px
-
+    background-color: rgb(133, 130, 127);
+    height: 211px;
+    margin-top: 0;
+    padding: 5px 5px 5px 5px;
 }
 
 .gears-text-box {
-  border: 5px double #f7eff0;
-  height: 250px;
-  width: 250px;
-  margin: 10px 10px 10px 10px;
+    border: 5px double #f7eff0;
+    height: 250px;
+    width: 250px;
+    margin: 10px 10px 10px 10px;
 }
-
-
 
 .gear-text:empty:not(:focus):before {
-  content: attr(data-placeholder);
-}
-.abilities-and-features:empty:not(:focus):before {
-  content: attr(data-placeholder);
-}
-.skill-circle-gears {
-margin: 10px 0 0 -42px;
+    content: attr(data-placeholder);
 }
 
-.circle-align-gears{
-  margin-bottom: -12px;
+.abilities-and-features:empty:not(:focus):before {
+    content: attr(data-placeholder);
 }
+
+.skill-circle-gears {
+    margin: 10px 0 0 -42px;
+}
+
+.circle-align-gears {
+    margin-bottom: -12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Fin css Fiche personnages */

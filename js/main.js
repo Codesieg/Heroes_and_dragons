@@ -117,14 +117,43 @@ $(window).on('load', function() {
     });
 
     /*------------------
-        	main-menu
-    	--------------------*/
+        main-menu
+    --------------------*/
 
 
 
 })(jQuery);
 
-$('#character-info-edit').on('click', function() {
-    var editable = element.contentEditable
-    element.contentEditable = "true"
+$('#btn-character-info-edit').on('click', function() {
+    var editable = document.getElementById("edit-character-info");
+    var btnDelete = document.getElementById("btn-character-info-edit");
+    var btnEdit = document.getElementById("btn-character-info-save");
+    if (editable.contentEditable == "true") {
+        editable.contentEditable = "false";
+        btnEdit.style.display = "none";
+        btnDelete.style.display = "block";
+        console.log("false");
+    } else {
+        editable.contentEditable = "true";
+        btnDelete.style.display = "none";
+        btnEdit.style.display = "block";
+        console.log("true");
+    }
+});
+
+$('#btn-character-info-save').on('click', function() {
+    var editable = document.getElementById("edit-character-info");
+    var btnDelete = document.getElementById("btn-character-info-edit");
+    var btnEdit = document.getElementById("btn-character-info-save");
+    if (editable.contentEditable == "true") {
+        editable.contentEditable = "false";
+        btnEdit.style.display = "none";
+        btnDelete.style.display = "block";
+        console.log("false");
+    } else {
+        editable.contentEditable = "true";
+        btnDelete.style.display = "none";
+        btnEdit.style.display = "block";
+        console.log("true");
+    }
 });

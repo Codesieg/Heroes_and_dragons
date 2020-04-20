@@ -70,8 +70,16 @@ tbody td {
     color: #0a79df;
 }
 
-.delete:hover {
-    color: #dc2a2a;
+#btn-character-info-edit {
+    display: block;
+}
+
+#btn-character-info-save {
+    display: none;
+}
+
+.save:hover {
+    color: #07fa64;
 }
 
 .character-story {

@@ -123,37 +123,38 @@ $(window).on('load', function() {
 
 
 })(jQuery);
-
+// Récupération du bouton d'édition de la description du personnage
 $('#btn-character-info-edit').on('click', function() {
     var editable = document.getElementById("edit-character-info");
-    var btnDelete = document.getElementById("btn-character-info-edit");
+    var btnSave = document.getElementById("btn-character-info-edit");
     var btnEdit = document.getElementById("btn-character-info-save");
-    if (editable.contentEditable == "true") {
-        editable.contentEditable = "false";
-        btnEdit.style.display = "none";
-        btnDelete.style.display = "block";
-        console.log("false");
-    } else {
-        editable.contentEditable = "true";
-        btnDelete.style.display = "none";
-        btnEdit.style.display = "block";
-        console.log("true");
-    }
+    showHideEditableBouton(editable, btnSave, btnEdit);
 });
-
+// Bouton de sauvegarde de la dexcription du personnage
 $('#btn-character-info-save').on('click', function() {
     var editable = document.getElementById("edit-character-info");
-    var btnDelete = document.getElementById("btn-character-info-edit");
+    var btnSave = document.getElementById("btn-character-info-edit");
     var btnEdit = document.getElementById("btn-character-info-save");
+    showHideEditableBouton(editable, btnSave, btnEdit);
+
+});
+
+/**
+ * Fonction de switch du bouton editer/sauvegarder
+ * @param {getElementById} editable 
+ * @param {getElementById} btnSave 
+ * @param {getElementById} btnEdit 
+ */
+function showHideEditableBouton(editable, btnSave, btnEdit) {
     if (editable.contentEditable == "true") {
         editable.contentEditable = "false";
         btnEdit.style.display = "none";
-        btnDelete.style.display = "block";
+        btnSave.style.display = "block";
         console.log("false");
     } else {
         editable.contentEditable = "true";
-        btnDelete.style.display = "none";
+        btnSave.style.display = "none";
         btnEdit.style.display = "block";
         console.log("true");
     }
-});
+}

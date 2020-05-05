@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <!-- include html-->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/w3.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 
@@ -37,7 +37,9 @@
 <body>
     <!-- Page Preloder -->
     <div id="preloder">
-        <div class="loader"></div>
+        <?php include('include/config.php'); ?>    
+        <div class="loader">
+        </div>
     </div>
 
     <!-- Header section -->

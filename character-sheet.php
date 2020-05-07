@@ -32,15 +32,21 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+    <!-- PHP -->
+    <?php 
+    require_once("content/characterManager.php");
+    require_once("content/characterSheet.php");
+    ?>
+
 </head>
 
 <body>
     <!-- Page Preloder -->
-    <div id="preloder">
-        <?php include('include/config.php'); ?>    
+    <!-- <div id="preloder">
+          
         <div class="loader">
         </div>
-    </div>
+    </div> -->
 
     <!-- Header section -->
     <div w3-include-html="menu.html" class="menu-character-sheet"></div>
@@ -49,7 +55,10 @@
     <!-- Page top section -->
     <section class="page-top-section set-bg" data-setbg="img/header-bg/1.jpg">
         <div class="container">
-            <h2>Sieg Heart</h2>
+            <h2><?php 
+            echo $perso->
+            ?>
+            </h2>
         </div>
     </section>
     <!-- sheet character section -->
@@ -62,9 +71,10 @@
                 </div>
                 <div class="story text-white">
                     <h2> Description :</h2>
-                    <blockquote contenteditable="true">
-                        <p>Lorem lorem ipsum Lorem lorem ipsum Lorem lorem ipsum Lorem lorem ipsum Lorem lorem ipsum</p>
-                    </blockquote>
+                    <div contenteditable="true" class="text-white">
+                        <?php
+                        characterManager::characterSheetFromDBDebug();?>
+                    </div>
                 </div>
             </div>
             <div class="character-info">

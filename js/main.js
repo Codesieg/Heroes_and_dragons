@@ -123,18 +123,39 @@ $(window).on('load', function() {
 
 
 })(jQuery);
-// Récupération du bouton d'édition de la description du personnage
+// Récupération du bouton d'édition du tableau classe du personnage
 $('#btn-character-info-edit').on('click', function() {
     var editable = document.getElementById("edit-character-info");
     var btnSave = document.getElementById("btn-character-info-edit");
     var btnEdit = document.getElementById("btn-character-info-save");
     showHideEditableBouton(editable, btnSave, btnEdit);
 });
-// Bouton de sauvegarde de la dexcription du personnage
+// Bouton de sauvegarde du tableau classe du personnage
 $('#btn-character-info-save').on('click', function() {
     var editable = document.getElementById("edit-character-info");
     var btnSave = document.getElementById("btn-character-info-edit");
     var btnEdit = document.getElementById("btn-character-info-save");
+    showHideEditableBouton(editable, btnSave, btnEdit);
+
+});
+
+// Bouton de sauvegarde de la description du personnage
+$('#btn-character-story-save').on('click', function() {
+    var editable = document.getElementById("edit-story-info");
+    var btnSave = document.getElementById("btn-character-story-edit");
+    var btnEdit = document.getElementById("btn-character-story-save");
+    var contenuEdit = document.getElementById("edit-story-info").innerHTML;
+    showHideEditableBouton(editable, btnSave, btnEdit);
+    editStoryInfo(contenuEdit);
+
+});
+
+// Récupération du bouton d'édition de la description du personnage
+$('#btn-character-story-edit').on('click', function() {
+    var editable = document.getElementById("edit-story-info");
+    var btnSave = document.getElementById("btn-character-story-edit");
+    var btnEdit = document.getElementById("btn-character-story-save");
+
     showHideEditableBouton(editable, btnSave, btnEdit);
 
 });
@@ -157,4 +178,21 @@ function showHideEditableBouton(editable, btnSave, btnEdit) {
         btnEdit.style.display = "block";
         console.log("true");
     }
+}
+
+function editStoryInfo(contenuEdit) {
+    // console.log(contenuEdit);
+    $.ajax({
+        method: "POST",
+        url: "./content/process.php",
+        data: {
+            'setDescription': contenuEdit,
+            success: function(result) {
+                console.log("Envoi ok de : ", contenuEdit);
+            },
+            error: function(resultat, statut, erreur) {}
+        },
+
+    });
+
 }

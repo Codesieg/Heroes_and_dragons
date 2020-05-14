@@ -78,6 +78,14 @@ tbody td {
     display: none;
 }
 
+#btn-character-story-edit {
+    display: block;
+}
+
+#btn-character-story-save {
+    display: none;
+}
+
 .save:hover {
     color: #07fa64;
 }
@@ -95,6 +103,8 @@ tbody td {
 
 .story {
     width: 795px;
+    height: 250px;
+    overflow: auto;
 }
 
 .story blockquote {

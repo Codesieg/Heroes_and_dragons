@@ -2,7 +2,7 @@
 <html lang="french">
 
 <head>
-    <title>TheQuest - Gaming Magazine Template</title>
+    <title>Heroes and Dragons</title>
     <meta charset="UTF-8">
     <meta name="description" content="TheQuest Gaming Magazine Template">
     <meta name="keywords" content="gaming, html">
@@ -36,6 +36,7 @@
     <?php 
     require_once("content/characterManager.php");
     require_once("content/characterSheet.php");
+    require_once("./menu.html");
     ?>
 
 </head>
@@ -49,14 +50,15 @@
     </div> -->
 
     <!-- Header section -->
-    <div w3-include-html="menu.html" class="menu-character-sheet"></div>
+    <!-- <div w3-include-html="menu.html" class="menu-character-sheet"></div> -->
     <!-- Header section end -->
 
     <!-- Page top section -->
     <section class="page-top-section set-bg" data-setbg="img/header-bg/1.jpg">
         <div class="container">
             <h2><?php 
-            echo $perso->
+            $perso = characterManager::characterSheetFromDB();
+            echo $perso->getUserName();
             ?>
             </h2>
         </div>
@@ -69,11 +71,14 @@
                 <div class="character-img">
                     <img src="img/game-characters/siegheart.jpg" alt="image-personnage">
                 </div>
-                <div class="story text-white">
-                    <h2> Description :</h2>
-                    <div contenteditable="true" class="text-white">
+                <div class="story">
+                    <h2>Description :</h2>
+                    <i class="button edit" id="btn-character-story-edit">editer</i>
+                    <i class="button save" id="btn-character-story-save">Sauvegarder</i>
+                    <div id="edit-story-info" contenteditable="false" class="text-white" >
                         <?php
-                        characterManager::characterSheetFromDBDebug();?>
+                        echo $perso->getDescription();
+                        ?>
                     </div>
                 </div>
             </div>
@@ -91,12 +96,12 @@
                     </thead>
                     <tbody id="edit-character-info" contenteditable="false">
                         <tr>
-                            <td contenteditable="inherit">Chevalier Noir</td>
-                            <td contenteditable="inherit"></td>
-                            <td contenteditable="inherit">2</td>
-                            <td contenteditable="inherit">Humain</td>
-                            <td contenteditable="inherit"></td>
-                            <td contenteditable="inherit"></td>
+                            <td contenteditable="inherit"><?php echo $perso->getClasse()?></td>
+                            <td contenteditable="inherit"><?php echo $perso->getArchetype()?></td>
+                            <td contenteditable="inherit"><?php echo $perso->getLevel()?></td>
+                            <td contenteditable="inherit"><?php echo $perso->getRace()?></td>
+                            <td contenteditable="inherit"><?php echo $perso->getAlignement()?></td>
+                            <td contenteditable="inherit"><?php echo $perso->getXp()?></td>
                             <td><i class="button edit" id="btn-character-info-edit">editer</i>
                                 <i class="button save" id="btn-character-info-save">Sauvegarder</i></td>
                         </tr>
@@ -639,9 +644,9 @@
     <script src="js/main.js"></script>
 
     <!-- include html-->
-    <script>
+    <!-- <script>
         w3.includeHTML();
-    </script>
+    </script> -->
 
 </body>
 

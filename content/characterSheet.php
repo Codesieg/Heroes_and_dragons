@@ -3,8 +3,18 @@ require_once("characterManager.php");
 
 class characterSheet{
 
+    // public $id;
+    // public $userName;
+    // public $description;
+    // public $classe;
+    // public $archetype;
+    // public $level;
+    // public $race;
+    // public $alignement;
+    // public $xp;
+
     private $id;
-    private $username;
+    private $userName;
     private $description;
     private $classe;
     private $archetype;
@@ -13,10 +23,8 @@ class characterSheet{
     private $alignement;
     private $xp;
 
-    public  $personnage = [];
-
-    public function __construct($name, $description, $classe, $archetype, $alignement, $level, $race, $xp) {
-        $this->name = $name;
+    public function __construct($userName, $description, $classe, $archetype, $level, $race, $alignement, $xp){
+        $this->userName = $userName;
         $this->description = $description;
         $this->classe = $classe;
         $this->archetype = $archetype;
@@ -31,7 +39,7 @@ class characterSheet{
     }
 
     public function getUserName(){
-        return $this->username;
+        return $this->userName;
     }
 
     public function getDescription(){
@@ -62,7 +70,61 @@ class characterSheet{
         return $this->xp;
     }
 
-    // Liste des getters
+    // Liste des setters
+
+    // public function setId($id){
+       
+    //         $this->$id = $id;
+        
+    // }
+
+    // public function setUserName($userName){
+        
+    //         $this->$userName = $userName;
+        
+    // }
+
+    // public function setDescription($description){
+        
+    //         $this->$description = $description;
+        
+    // }    
+    
+    // public function setClasse($classe){
+        
+    //         $this->$classe = $classe;
+        
+    // }
+
+    // public function setArchetype($archetype){
+       
+    //         $this->$archetype = $archetype;
+        
+    // }
+
+    // public function setLevel($level){
+       
+    //         $this->$level = $level;
+        
+    // }
+
+    // public function setRace($race){
+        
+    //         $this->$race = $race;
+        
+    // }
+
+    // public function setAlignement($alignement){
+       
+    //         $this->$alignement = $alignement;
+       
+    // }
+
+    // public function setXp($xp){
+    //     $this->$xp = $xp;
+    // }
+
+
 
     public function setId($id){
         $id = (int) $id;
@@ -71,35 +133,53 @@ class characterSheet{
         }
     }
 
-    public function setUserName(){
-        if(is_string($username)){
-            $this->$username = $username;
+    public function setUserName($userName){
+        if(is_string($userName)){
+            $this->$userName = $userName;
         }
     }
 
-    public function setDescription(){
+    public function setDescription($description){
         if (is_string($description)) {
             $this->$description = $description;
         }
     }    
     
-    public function setClasse(){
+    public function setClasse($classe){
         if(is_string($classe)){
             $this->$classe = $classe;
         }
     }
 
-    public function setArchetype(){
+    public function setArchetype($archetype){
         if(is_string($archetype)){
             $this->$archetype = $archetype;
         }
     }
 
-    public function setLevel(){
+    public function setLevel($level){
         $level = (int) $level;
-        if($level >=1 && $level <=1 ){
-
+        if($level >=1 && $level <=100 ){
+            $this->$level = $level;
         }
+    }
+
+    public function setRace($race){
+        if (is_string($race)){
+            $this->$race = $race;
+        }
+    }
+
+    public function setAlignement($alignement){
+        $alignement = (int) $alignement;
+        if($alignement >=1 && $alignement <= 100){
+            $this->$alignement = $alignement;
+        }
+    }
+
+    public function setXp($xp){
+        $xp = (int) $xp;
+        $this->$xp = $xp;
     }
 
 
@@ -107,19 +187,3 @@ class characterSheet{
 ?>
 
 
-<!-- example : 
-private $nom;
-    private $poids;
-    private $prix;
-
-    public static $fruits = [];
-
-    public function __construct($nom,$poids,$prix){
-        $this->nom = $nom;
-        $this->poids = $poids;
-        $this->prix = $prix;
-    }
-
-    public function getNom(){
-        return $this->nom;
-    } -->
